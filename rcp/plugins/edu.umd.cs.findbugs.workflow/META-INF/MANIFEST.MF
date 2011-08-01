@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Workflow
+Bundle-SymbolicName: edu.umd.cs.findbugs.workflow
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: edu.umd.cs.findbugs.workflow.WorkflowActivator
+Bundle-Vendor: edu.umd.cs.findbugs.workflow
+Require-Bundle: org.eclipse.core.runtime,
+ org.dom4j;bundle-version="1.6.1",
+ javax.annotation;bundle-version="1.0.0",
+ org.apache.bcel;bundle-version="5.2.0",
+ edu.umd.cs.findbugs;bundle-version="1.0.0",
+ edu.umd.cs.findbugs.core;bundle-version="1.0.0",
+ edu.umd.cs.findbugs.annotations;bundle-version="1.0.0"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-ActivationPolicy: lazy
+Export-Package: edu.umd.cs.findbugs.workflow

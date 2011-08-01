@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Annotation
+Bundle-SymbolicName: javax.annotation
+Bundle-Version: 1.0.0
+Bundle-Vendor: jcp
+Export-Package: javax.annotation,
+ javax.annotation.concurrent,
+ javax.annotation.meta
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6

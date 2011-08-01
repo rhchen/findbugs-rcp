@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Annotations
+Bundle-SymbolicName: edu.umd.cs.findbugs.annotations
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: edu.umd.cs.findbugs.annotations.AnnotationsActivator
+Bundle-Vendor: edu.umd.cs.findbugs
+Require-Bundle: org.eclipse.core.runtime,
+ javax.annotation;bundle-version="1.0.0",
+ edu.umd.cs.findbugs.core;bundle-version="1.0.0"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-ActivationPolicy: lazy
+Export-Package: edu.umd.cs.findbugs.annotations

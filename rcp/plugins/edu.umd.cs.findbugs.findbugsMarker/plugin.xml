@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+<extension
+         id="edu.umd.cs.findbugs.findbugsMarker"
+         name="FindBugs Problem"
+         point="org.eclipse.core.resources.markers">
+      <super type="org.eclipse.core.resources.problemmarker"/>
+      <super type="org.eclipse.core.resources.textmarker"/>
+      <super type="org.eclipse.jdt.core.problem"/>
+      <persistent value="true"/>
+   </extension>
+
+   <extension
+         id="findbugsMarkerHigh"
+         name="FindBugs Problem (High Priority)"
+         point="org.eclipse.core.resources.markers">
+      <super type="edu.umd.cs.findbugs.findbugsMarker"/>
+      <super type="org.eclipse.core.resources.problemmarker"/>
+      <super type="org.eclipse.core.resources.textmarker"/>
+      <super type="org.eclipse.jdt.core.problem"/>
+      <persistent value="true">
+      </persistent>
+   </extension>
+   <extension
+         id="findbugsMarkerNormal"
+         name="FindBugs Problem (Normal Priority)"
+         point="org.eclipse.core.resources.markers">
+      <super type="edu.umd.cs.findbugs.findbugsMarker"/>
+      <super type="org.eclipse.core.resources.problemmarker"/>
+      <super type="org.eclipse.core.resources.textmarker"/>
+      <super type="org.eclipse.jdt.core.problem"/>
+      <persistent value="true"/>
+   </extension>
+   <extension
+         id="findbugsMarkerLow"
+         name="FindBugs Problem (Low Priority)"
+         point="org.eclipse.core.resources.markers">
+      <super type="edu.umd.cs.findbugs.findbugsMarker"/>
+      <super type="org.eclipse.core.resources.problemmarker"/>
+      <super type="org.eclipse.core.resources.textmarker"/>
+      <super type="org.eclipse.jdt.core.problem"/>
+      <persistent value="true"/>
+   </extension>
+   <extension
+         id="findbugsMarkerExperimental"
+         name="FindBugs Problem (Experimental)"
+         point="org.eclipse.core.resources.markers">
+      <super type="edu.umd.cs.findbugs.findbugsMarker"/>
+      <super type="org.eclipse.core.resources.problemmarker"/>
+      <super type="org.eclipse.core.resources.textmarker"/>
+      <super type="org.eclipse.jdt.core.problem"/>
+      <persistent value="true"/>
+   </extension>
+
+
+   <!-- specify custom icon for findbugsMarker -->
+   <extension point="org.eclipse.ui.editors.annotationTypes">
+      <type
+         name="edu.umd.cs.findbugs.findbugsWarningAnnotationHigh"
+         super="org.eclipse.ui.workbench.texteditor.warning"
+         markerType="edu.umd.cs.findbugs.findbugsMarker.findbugsMarkerHigh"/>
+      <type
+            markerType="edu.umd.cs.findbugs.findbugsMarker.findbugsMarkerNormal"
+            name="edu.umd.cs.findbugs.findbugsWarningAnnotationNormal"
+            super="org.eclipse.ui.workbench.texteditor.warning"/>
+      <type
+            markerType="edu.umd.cs.findbugs.findbugsMarker.findbugsMarkerLow"
+            name="edu.umd.cs.findbugs.findbugsWarningAnnotationLow"
+            super="org.eclipse.ui.workbench.texteditor.warning"/>
+      <type
+            markerType="edu.umd.cs.findbugs.findbugsMarker.findbugsMarkerExperimental"
+            name="edu.umd.cs.findbugs.findbugsWarningAnnotationExperimental"
+            super="org.eclipse.ui.workbench.texteditor.warning"/>
+  </extension>
+  <extension point="org.eclipse.ui.editors.markerAnnotationSpecification">
+      <specification
+            annotationType="edu.umd.cs.findbugs.findbugsWarningAnnotationHigh"
+            icon="icons/buggy-tiny.png"
+            includeOnPreferencePage="true"
+            label="fbWarningHigh"
+            quickFixIcon="icons/buggy-tiny.png"/>
+      <specification
+            annotationType="edu.umd.cs.findbugs.findbugsWarningAnnotationNormal"
+            icon="icons/buggy-tiny-orange.png"
+            includeOnPreferencePage="true"
+            label="fbWarningNormal"
+            quickFixIcon="icons/buggy-tiny-orange.png"/>
+      <specification
+            annotationType="edu.umd.cs.findbugs.findbugsWarningAnnotationLow"
+            icon="icons/buggy-tiny-yellow.png"
+            includeOnPreferencePage="true"
+            label="fbWarningLow"
+            quickFixIcon="icons/buggy-tiny-yellow.png"/>
+      <specification
+            annotationType="edu.umd.cs.findbugs.findbugsWarningAnnotationExperimental"
+            icon="icons/buggy-tiny-green.png"
+            includeOnPreferencePage="false"
+            label="fbWarningExperimental"
+            quickFixIcon="icons/buggy-tiny-green.png"/>
+   </extension>
+
+   <extension
+         point="org.eclipse.ui.ide.markerImageProviders">
+      <imageprovider
+         icon="icons/buggy-tiny.png"
+         id="de.tobject.findbugs.imageprovider"
+         markertype="edu.umd.cs.findbugs.findbugsMarker.findbugsMarkerHigh">
+      </imageprovider>
+      <imageprovider
+         icon="icons/buggy-tiny-orange.png"
+         id="de.tobject.findbugs.imageprovider"
+         markertype="edu.umd.cs.findbugs.findbugsMarker.findbugsMarkerNormal">
+      </imageprovider>
+      <imageprovider
+         icon="icons/buggy-tiny-yellow.png"
+         id="de.tobject.findbugs.imageprovider"
+         markertype="edu.umd.cs.findbugs.findbugsMarker.findbugsMarkerLow">
+      </imageprovider>
+      <imageprovider
+         icon="icons/buggy-tiny-green.png"
+         id="de.tobject.findbugs.imageprovider"
+         markertype="edu.umd.cs.findbugs.findbugsMarker.findbugsMarkerExperimental">
+      </imageprovider>
+   </extension>
+
+   <extension
+         point="org.eclipse.ui.ide.markerResolution">
+      <markerResolutionGenerator
+            markerType="edu.umd.cs.findbugs.findbugsMarker.findbugsMarkerHigh"
+            class="edu.umd.cs.findbugs.findbugsmarker.BugResolutionGenerator"/>
+      <markerResolutionGenerator
+            class="edu.umd.cs.findbugs.findbugsmarker.BugResolutionGenerator"
+            markerType="edu.umd.cs.findbugs.findbugsMarker.findbugsMarkerNormal">
+      </markerResolutionGenerator>
+      <markerResolutionGenerator
+            class="edu.umd.cs.findbugs.findbugsmarker.BugResolutionGenerator"
+            markerType="edu.umd.cs.findbugs.findbugsMarker.findbugsMarkerLow">
+      </markerResolutionGenerator>
+   </extension>
+</plugin>

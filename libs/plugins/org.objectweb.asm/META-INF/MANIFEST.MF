@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Asm
+Bundle-SymbolicName: org.objectweb.asm
+Bundle-Version: 3.3.1
+Bundle-Vendor: objectweb
+Export-Package: org.objectweb.asm,
+ org.objectweb.asm.commons,
+ org.objectweb.asm.signature,
+ org.objectweb.asm.tree,
+ org.objectweb.asm.tree.analysis,
+ org.objectweb.asm.util,
+ org.objectweb.asm.xml
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6

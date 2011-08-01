@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Jformatstring
+Bundle-SymbolicName: edu.umd.cs.findbugs.jformatstring
+Bundle-Version: 1.0.0
+Bundle-Vendor: edu.umd.cs.findbugs.jformatstring
+Export-Package: edu.umd.cs.findbugs.formatStringChecker;version="1.0.0"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
