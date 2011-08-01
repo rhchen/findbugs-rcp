@@ -46,18 +46,19 @@ echo "Fetch Source Codes from github ....."
 cd ${srcDir}
 git clone git://github.com/rhchen/findbugs-rcp.git
 
-cp -Rf ${srcDir}/RSE-EXT/rse/* ${buildDirectory}
-cp -Rf ${srcDir}/RSE-EXT/releng/* ${buildDirectory}
+cp -Rf ${srcDir}/findbugs-rcp/rcp/* ${buildDirectory}
+cp -Rf ${srcDir}/findbugs-rcp/libs/* ${buildDirectory}
+cp -Rf ${srcDir}/findbugs-rcp/releng/* ${buildDirectory}
 
 # Prepareing build environment
-export JAVA_HOME=/home/rhchen/works/tools/jrocket
+export JAVA_HOME=/home/rhchen/works/tools/jdk17
 export PATH=$JAVA_HOME/bin:$PATH
 echo "JAVA_HOME = ${JAVA_HOME}"
 `java -version`
 
 cp ${buildDirectory}/plugins/net.izhtw.rse.releng/build.properties ${buildConfiguration}
 
-echo "Start build RSE-EXT"
+echo "Start build findbugs-rcp"
 
 # Product Build For Eclipse 3.7
 #java -jar ${baseLocation}/eclipse/plugins/org.eclipse.equinox.launcher_1.2.0.v20110502.jar -application org.eclipse.ant.core.antRunner -buildfile ${baseLocation}/eclipse/plugins/org.eclipse.pde.build_3.7.0.v20110512-1320/scripts/productBuild/productBuild.xml -Dbuilder=${buildConfiguration}
