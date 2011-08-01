@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="edu.umd.cs.findbugs.feature"
+      label="edu.umd.cs.findbugs.feature"
+      version="1.0.0.qualifier"
+      provider-name="edu.umd.cs.findbugs">
+
+   <description url="http://www.example.com/description">
+      [Enter Feature Description here.]
+   </description>
+
+   <copyright url="http://www.example.com/copyright">
+      [Enter Copyright Description here.]
+   </copyright>
+
+   <license url="http://www.example.com/license">
+      [Enter License Description here.]
+   </license>
+
+   <requires>
+      <import plugin="org.eclipse.core.runtime" version="3.7.0" match="greaterOrEqual"/>
+      <import plugin="javax.annotation" version="1.0.0" match="greaterOrEqual"/>
+      <import plugin="org.dom4j" version="1.6.1" match="greaterOrEqual"/>
+      <import plugin="org.objectweb.asm" version="3.3.1" match="greaterOrEqual"/>
+      <import plugin="org.apache.bcel" version="5.3.0" match="greaterOrEqual"/>
+      <import plugin="org.apache.commons.lang" version="2.6.0" match="greaterOrEqual"/>
+      <import plugin="net.jcip.annotations" version="1.0.0" match="greaterOrEqual"/>
+      <import plugin="edu.umd.cs.findbugs.annotations" version="1.0.0" match="greaterOrEqual"/>
+      <import plugin="edu.umd.cs.findbugs.jformatstring" version="1.0.0" match="greaterOrEqual"/>
+      <import plugin="edu.umd.cs.findbugs.core" version="1.0.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.core.resources" version="3.7.100" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.ui" version="3.7.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.ui.ide" version="3.7.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.jdt.core" version="3.7.0" match="greaterOrEqual"/>
+      <import plugin="edu.umd.cs.findbugs.quickfix" version="1.0.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.ui.editors" version="3.7.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.jface.text" version="3.7.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.core.resources" version="3.7.0" match="greaterOrEqual"/>
+      <import plugin="edu.umd.cs.findbugs" version="1.0.0" match="greaterOrEqual"/>
+      <import plugin="org.apache.bcel" version="5.2.0" match="greaterOrEqual"/>
+   </requires>
+
+   <plugin
+         id="edu.umd.cs.findbugs"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="edu.umd.cs.findbugs.annotations"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="edu.umd.cs.findbugs.core"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="edu.umd.cs.findbugs.findbugsMarker"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="edu.umd.cs.findbugs.jformatstring"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="edu.umd.cs.findbugs.quickfix"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="edu.umd.cs.findbugs.workflow"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+</feature>
