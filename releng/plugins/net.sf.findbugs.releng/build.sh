@@ -56,7 +56,7 @@ export PATH=$JAVA_HOME/bin:$PATH
 echo "JAVA_HOME = ${JAVA_HOME}"
 `java -version`
 
-cp ${buildDirectory}/plugins/net.izhtw.rse.releng/build.properties ${buildConfiguration}
+cp ${buildDirectory}/plugins/net.sf.findbugs.releng/build.properties ${buildConfiguration}
 
 echo "Start build findbugs-rcp"
 
