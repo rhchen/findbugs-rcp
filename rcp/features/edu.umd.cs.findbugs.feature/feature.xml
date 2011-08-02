@@ -31,9 +31,9 @@
       <import plugin="org.eclipse.core.resources" version="3.7.100" match="greaterOrEqual"/>
       <import plugin="org.eclipse.ui" version="3.7.0" match="greaterOrEqual"/>
       <import plugin="org.eclipse.ui.ide" version="3.7.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.ui.editors" version="3.7.0" match="greaterOrEqual"/>
       <import plugin="org.eclipse.jdt.core" version="3.7.0" match="greaterOrEqual"/>
       <import plugin="edu.umd.cs.findbugs.quickfix" version="1.0.0" match="greaterOrEqual"/>
-      <import plugin="org.eclipse.ui.editors" version="3.7.0" match="greaterOrEqual"/>
       <import plugin="org.eclipse.jface.text" version="3.7.0" match="greaterOrEqual"/>
       <import plugin="org.eclipse.core.resources" version="3.7.0" match="greaterOrEqual"/>
       <import plugin="edu.umd.cs.findbugs" version="1.0.0" match="greaterOrEqual"/>
@@ -84,6 +84,13 @@
 
    <plugin
          id="edu.umd.cs.findbugs.workflow"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="net.jcip.annotations"
          download-size="0"
          install-size="0"
          version="0.0.0"
