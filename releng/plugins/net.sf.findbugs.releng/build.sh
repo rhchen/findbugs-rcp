@@ -47,7 +47,8 @@ cd ${srcDir}
 git clone git://github.com/rhchen/findbugs-rcp.git
 
 cp -Rf ${srcDir}/findbugs-rcp/rcp/* ${buildDirectory}
-cp -Rf ${srcDir}/findbugs-rcp/libs/* ${baseLocation}/eclipse
+#cp -Rf ${srcDir}/findbugs-rcp/libs/* ${baseLocation}/eclipse
+cp -Rf ${srcDir}/findbugs-rcp/libs/* ${buildDirectory}
 cp -Rf ${srcDir}/findbugs-rcp/releng/* ${buildDirectory}
 
 # Prepareing build environment
