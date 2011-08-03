@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         id="net.sf.findbugs.master.application"
+         name="net.sf.findbugs.master.application"
+         point="org.eclipse.core.runtime.applications">
+      <application
+            cardinality="singleton-global"
+            thread="main"
+            visible="true">
+         <run
+               class="net.sf.findbugs.master.Application">
+         </run>
+      </application>
+   </extension>
+
+   <extension
+         id="master"
+         point="org.eclipse.core.runtime.products">
+      <product
+            application="net.sf.findbugs.master.application"
+            name="master">
+         <property
+               name="appName"
+               value="master">
+         </property>
+      </product>
+   </extension>
+
+</plugin>
