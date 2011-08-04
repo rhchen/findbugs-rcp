@@ -122,9 +122,9 @@
    </plugins>
 
    <features>
+      <feature id="net.sf.findbugs.feature" version="1.0.0.qualifier"/>
       <feature id="edu.umd.cs.findbugs.feature" version="1.0.0.qualifier"/>
       <feature id="de.tobject.findbugs.feature" version="1.0.0.qualifier"/>
-      <feature id="net.sf.findbugs.feature" version="1.0.0.qualifier"/>
    </features>
 
 

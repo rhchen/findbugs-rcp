@@ -18,8 +18,9 @@ import org.osgi.framework.Bundle;
  */
 public class ApplicationWorkbenchAdvisor extends WorkbenchAdvisor {
 
-	private static final String PERSPECTIVE_ID = "de.tobject.findbugs.FindBugsPerspective";
-	private static final String P_ID = "org.eclipse.jdt.ui.JavaPerspective";
+	//private static final String PERSPECTIVE_ID = "de.tobject.findbugs.FindBugsPerspective";
+	private static final String PERSPECTIVE_ID = "org.eclipse.ui.resourcePerspective";
+	//private static final String PERSPECTIVE_ID = "org.eclipse.jdt.ui.JavaPerspective";
 
 	public WorkbenchWindowAdvisor createWorkbenchWindowAdvisor(
 			IWorkbenchWindowConfigurer configurer) {
