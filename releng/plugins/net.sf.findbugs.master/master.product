@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?pde version="3.5"?>
 
-<product name="master" uid="master" id="net.sf.findbugs.master.master" application="net.sf.findbugs.master.application" version="1.0.0" useFeatures="true" includeLaunchers="true">
+<product name="master" uid="master" id="net.sf.findbugs.master.master" application="org.eclipse.ui.ide.workbench" version="1.0.0" useFeatures="true" includeLaunchers="true">
 
    <configIni use="default">
    </configIni>
@@ -122,8 +122,6 @@
    </plugins>
 
    <features>
-      <feature id="org.eclipse.platform" version="3.7.0.v20110530-9gF7UHNFFt4cwE-pkZDJ7oz-mj4OSEIlu9SEv0f"/>
-      <feature id="org.eclipse.jdt" version="3.7.0.v20110520-0800-7z8gFchFMTdFYKuLqBLqRja9B15B"/>
       <feature id="edu.umd.cs.findbugs.feature" version="1.0.0.qualifier"/>
       <feature id="de.tobject.findbugs.feature" version="1.0.0.qualifier"/>
       <feature id="net.sf.findbugs.feature" version="1.0.0.qualifier"/>

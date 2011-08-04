@@ -19,7 +19,7 @@
          id="master"
          point="org.eclipse.core.runtime.products">
       <product
-            application="net.sf.findbugs.master.application"
+            application="org.eclipse.ui.ide.workbench"
             name="master">
          <property
                name="appName"
