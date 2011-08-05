@@ -1,29 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?pde version="3.5"?>
 
-<product name="master" uid="master" id="net.sf.findbugs.master.master" application="org.eclipse.ui.ide.workbench" version="1.0.0" useFeatures="true" includeLaunchers="true">
+<product name="FindBugs RCP" uid="master" id="net.sf.findbugs.master.master" application="org.eclipse.ui.ide.workbench" version="1.0.0" useFeatures="true" includeLaunchers="true">
+
+   <aboutInfo>
+      <image path="/net.sf.findbugs.master/icons/buggy-sm.png"/>
+      <text>
+         The name FindBugs and the FindBugs logo is trademarked by the University of Maryland. 
+
+FindBugs is free software distributed under the terms of the Lesser GNU Public License. 
+
+You should have received a copy of the license in the file LICENSE.txt in the FindBugs distribution.
+      </text>
+   </aboutInfo>
 
    <configIni use="default">
    </configIni>
 
    <launcherArgs>
+      <programArgs>--launcher.XXPermSize 256m
+--launcher.XXMaxPermSize 256m</programArgs>
+      <vmArgs>-Xms256m -Xmx512m</vmArgs>
       <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts</vmArgsMac>
    </launcherArgs>
+
+   <windowImages i16="/net.sf.findbugs.master/icons/buggy-tiny.png" i32="/net.sf.findbugs.master/icons/smallBuggy.png"/>
 
    <splash
       location="net.sf.findbugs.master"
       startupProgressRect="5,255,400,7"
       startupMessageRect="7,235,400,17"
       startupForegroundColor="ED112B" />
-   <launcher>
+   <launcher name="findbugs-rcp">
+      <linux icon="/net.sf.findbugs.master/smallBuggy.ico"/>
       <solaris/>
-      <win useIco="false">
+      <win useIco="true">
+         <ico path="/net.sf.findbugs.master/smallBuggy.ico"/>
          <bmp/>
       </win>
    </launcher>
 
+
    <vm>
    </vm>
+
 
    <plugins>
       <plugin id="com.ibm.icu"/>

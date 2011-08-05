@@ -20,10 +20,11 @@
          point="org.eclipse.core.runtime.products">
       <product
             application="org.eclipse.ui.ide.workbench"
-            name="master">
+            description="An eclipse based RCP for FindBugs"
+            name="FindBugs RCP">
          <property
                name="appName"
-               value="master">
+               value="FindBugs RCP">
          </property>
          <property
                name="startupForegroundColor"
@@ -40,6 +41,18 @@
          <property
                name="preferenceCustomization"
                value="plugin_customization.ini">
+         </property>
+         <property
+               name="aboutImage"
+               value="icons/buggy-sm.png">
+         </property>
+         <property
+               name="aboutText"
+               value="The name FindBugs and the FindBugs logo is trademarked by the University of Maryland. &#x0A;&#x0A;FindBugs is free software distributed under the terms of the Lesser GNU Public License. &#x0A;&#x0A;You should have received a copy of the license in the file LICENSE.txt in the FindBugs distribution.">
+         </property>
+         <property
+               name="windowImages"
+               value="icons/buggy-tiny.png,icons/smallBuggy.png">
          </property>
       </product>
    </extension>
