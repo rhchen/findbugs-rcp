@@ -25,6 +25,22 @@
                name="appName"
                value="master">
          </property>
+         <property
+               name="startupForegroundColor"
+               value="ED112B">
+         </property>
+         <property
+               name="startupMessageRect"
+               value="7,235,400,17">
+         </property>
+         <property
+               name="startupProgressRect"
+               value="5,255,400,7">
+         </property>
+         <property
+               name="preferenceCustomization"
+               value="plugin_customization.ini">
+         </property>
       </product>
    </extension>
 
