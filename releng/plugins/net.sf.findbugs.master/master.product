@@ -32,18 +32,14 @@ You should have received a copy of the license in the file LICENSE.txt in the Fi
       startupMessageRect="7,235,400,17"
       startupForegroundColor="ED112B" />
    <launcher name="findbugs-rcp">
-      <linux icon="/net.sf.findbugs.master/smallBuggy.ico"/>
       <solaris/>
-      <win useIco="true">
-         <ico path="/net.sf.findbugs.master/smallBuggy.ico"/>
+      <win useIco="false">
          <bmp/>
       </win>
    </launcher>
 
-
    <vm>
    </vm>
-
 
    <plugins>
       <plugin id="com.ibm.icu"/>
