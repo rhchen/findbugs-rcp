@@ -5,6 +5,7 @@ Bundle-SymbolicName: de.tobject.findbugs;singleton:=true
 Bundle-Version: 1.0.0.qualifier
 Bundle-Activator: de.tobject.findbugs.FindbugsPlugin
 Bundle-Vendor: de.tobject.findbugs
+Bundle-Localization: plugin
 Require-Bundle: org.eclipse.ui.workbench.texteditor,
  org.eclipse.ui,
  org.eclipse.ant.core,
